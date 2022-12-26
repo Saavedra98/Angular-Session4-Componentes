@@ -1,0 +1,15 @@
+<div class="caja">
+    <div class="card mb-3" style="width: 255px;">
+        <img src="https://pbs.twimg.com/media/E8jxa-AWUAAPSX9.jpg:large" class="card-img-top" >  
+        <div class="card-body">
+            <hr>
+          <h5 class="card-title text-center">{{nombre}}</h5>
+
+        </div>
+    </div>
+
+    <div class="formulario"> 
+        <app-hijo [nombreHijo]="nombre" (cambioNombreHijo)="nombre = $event" ></app-hijo>
+    </div>
+</div>
+
